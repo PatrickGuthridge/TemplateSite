@@ -1,7 +1,7 @@
 
 
 
-@keyframes cssload-spin{
+@keyframes spin{
 	0%,	100% {
 		box-shadow: 26px 26px rgb(79,77,73), -26px 26px rgb(223,223,223), -26px -26px rgb(79,77,73), 26px -26px rgb(223,223,223);
 	}
@@ -16,7 +16,7 @@
 	}
 }
 
-@-webkit-keyframes cssload-spin{
+@-webkit-keyframes spin{
 	0%,	100% {
 		box-shadow: 26px 26px rgb(79,77,73), -26px 26px rgb(223,223,223), -26px -26px rgb(79,77,73), 26px -26px rgb(223,223,223);
 	}
@@ -31,7 +31,7 @@
 	}
 }
 
-@-moz-keyframes cssload-spin{
+@-moz-keyframes spin{
 	0%,	100% {
 		box-shadow: 26px 26px rgb(79,77,73), -26px 26px rgb(223,223,223), -26px -26px rgb(79,77,73), 26px -26px rgb(223,223,223);
 	}
@@ -47,9 +47,8 @@
 }
 body{
     background-color: rgb(31, 31, 31);
-    transition: 0.75s;
 }
-body.init{
+body.init, .await{
 	position: fixed;
     top: 50%;
     left: 50%;
@@ -58,7 +57,7 @@ body.init{
 	height: 24px;
 	border-radius: 100%;
 	box-shadow: 26px 26px rgb(79,77,73), -26px 26px rgb(223,223,223), -26px -26px rgb(79,77,73), 26px -26px rgb(223,223,223);
-	animation: cssload-spin ease infinite 2.8s;
-		-webkit-animation: cssload-spin ease infinite 2.8s;
-		-moz-animation: cssload-spin ease infinite 2.8s;
+	animation: spin ease-in-out infinite 3s;
+		-webkit-animation: spin ease-in-out infinite 3s;
+		-moz-animation: spin ease-in-out infinite 3s;
 }
