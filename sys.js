@@ -1,3 +1,5 @@
+var images = [new Image("https://i0.wp.com/techbeasts.com/wp-content/uploads/2016/12/4k-wallpaper-5.jpg"), new Image("https://i0.wp.com/techbeasts.com/wp-content/uploads/2016/12/4k-image-tiger-jumping.jpg"),new Image("https://i2.wp.com/techbeasts.com/wp-content/uploads/2016/12/6.jpg")];
+console.log(images)
 var header = {};
 var page = {};
 var footer = {};
