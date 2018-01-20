@@ -1,7 +1,3 @@
-var images = [new Image("https://i0.wp.com/techbeasts.com/wp-content/uploads/2016/12/4k-wallpaper-5.jpg"), new Image("https://i0.wp.com/techbeasts.com/wp-content/uploads/2016/12/4k-image-tiger-jumping.jpg"),new Image("https://i2.wp.com/techbeasts.com/wp-content/uploads/2016/12/6.jpg")];
-for(image of images){
-    document.body.appendChild(image)
-}
 var header = {};
 var page = {};
 var footer = {};
@@ -41,12 +37,22 @@ function Footer(){
     this.setup = setup;
 }
 
+function down(){
+    var image1 = new Image();
+    image1.src = "https://i0.wp.com/techbeasts.com/wp-content/uploads/2016/12/4k-wallpaper-5.jpg";
+    var image2 = new Image();
+    image2.src = "https://i0.wp.com/techbeasts.com/wp-content/uploads/2016/12/4k-image-tiger-jumping.jpg";
+    var image3 = new Image();
+    image3.src = "https://i2.wp.com/techbeasts.com/wp-content/uploads/2016/12/6.jpg";
+    document.body.appendChild(image1);
+    document.body.appendChild(image2);
+    document.body.appendChild(image3);
+}
 function init(e){
     //Create main document elements
     header = new Header();
     page = new Page();
     footer = new Footer();
-
     //Clear existing document
     //document.scrub();
     setTimeout(function(){
@@ -56,4 +62,5 @@ function init(e){
 
     //document.body.appendChild(header.setup);
 }
+window.addEventListener("DOMContentLoaded", down)
 window.addEventListener("load", init);

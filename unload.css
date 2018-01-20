@@ -58,3 +58,10 @@ body.init, .await{
         -webkit-animation: spin ease-in-out infinite 3s;
         -moz-animation: spin ease-in-out infinite 3s;
 }
+
+
+
+img{
+	width: 100%;
+	height: 100%;
+}
