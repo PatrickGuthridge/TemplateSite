@@ -1,5 +1,7 @@
 var images = [new Image("https://i0.wp.com/techbeasts.com/wp-content/uploads/2016/12/4k-wallpaper-5.jpg"), new Image("https://i0.wp.com/techbeasts.com/wp-content/uploads/2016/12/4k-image-tiger-jumping.jpg"),new Image("https://i2.wp.com/techbeasts.com/wp-content/uploads/2016/12/6.jpg")];
-console.log(images)
+for(image of images){
+    document.body.appendChild(image)
+}
 var header = {};
 var page = {};
 var footer = {};
@@ -46,7 +48,7 @@ function init(e){
     footer = new Footer();
 
     //Clear existing document
-    document.scrub();
+    //document.scrub();
     setTimeout(function(){
         document.body.classList.remove("init");
     }, 33)
