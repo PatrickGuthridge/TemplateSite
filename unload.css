@@ -45,9 +45,6 @@
 		box-shadow: 26px -26px #dfdfdf, 26px 26px #4f4d49, -26px 26px #dfdfdf, -26px -26px #4f4d49;
 	}
 }
-body{
-    background-color: rgb(31, 31, 31);
-}
 body.init, .await{
 	position: fixed;
     top: 50%;
@@ -58,6 +55,6 @@ body.init, .await{
 	border-radius: 100%;
 	box-shadow: 26px 26px rgb(79,77,73), -26px 26px rgb(223,223,223), -26px -26px rgb(79,77,73), 26px -26px rgb(223,223,223);
 	animation: spin ease-in-out infinite 3s;
-		-webkit-animation: spin ease-in-out infinite 3s;
-		-moz-animation: spin ease-in-out infinite 3s;
+        -webkit-animation: spin ease-in-out infinite 3s;
+        -moz-animation: spin ease-in-out infinite 3s;
 }

@@ -1,3 +1,6 @@
 *{
     transition: all 0.75s;
 }
+body{
+	background-color: rgb(31, 31, 31);
+}

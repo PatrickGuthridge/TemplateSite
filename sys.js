@@ -45,7 +45,10 @@ function init(e){
 
     //Clear existing document
     document.scrub();
-    document.body.classList.remove("init");
+    setTimeout(function(){
+        document.body.classList.remove("init");
+    }, 33)
+
 
     //document.body.appendChild(header.setup);
 }
